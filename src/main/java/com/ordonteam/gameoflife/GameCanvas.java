@@ -57,7 +57,7 @@ public class GameCanvas extends Canvas{
                 while(!stopped){
                     game.tick();
                     repaint();
-                    Thread.sleep(125);
+                    Thread.sleep(1000);
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
