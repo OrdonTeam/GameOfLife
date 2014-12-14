@@ -13,11 +13,6 @@ public class Life {
         this.y = y;
     }
 
-    @Override
-    public String toString() {
-        return "X="+x+" Y="+y;
-    }
-
     public Set<Life> getPossibleNeighbors() {
         Set<Life> neighbors = new HashSet<Life>();
         neighbors.add(new Life(x-1,y-1));
@@ -33,6 +28,11 @@ public class Life {
 
     public void paint(Graphics g, int side) {
         g.fillRect(x*side,y*side,side,side);
+    }
+
+    @Override
+    public String toString() {
+        return "X="+x+" Y="+y;
     }
 
     @Override

@@ -75,12 +75,6 @@ public class GameTest {
     }
 
     @Test
-    @Ignore
-    public void shouldBeAbleToAddLifeAfterTick() throws Exception {
-
-    }
-
-    @Test
     public void shouldEmergeWithThreeNeighbors() throws Exception {
         game.addLives(new Life(0,0), new Life(0,2), new Life(1,1));
 
